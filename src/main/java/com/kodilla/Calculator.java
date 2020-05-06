@@ -17,7 +17,7 @@ public class Calculator {
     public static void main(String[] args) {
          Calculator calculator = new Calculator();
          double addResult = calculator.adding(2.6,3.8);
-         System.out.println("Adding result: " + addResult); git add *
+         System.out.println("Adding result: " + addResult);
 
          double subResult = calculator.substraction(4.5,2.2);
          System.out.println("Substraction result: " + subResult);
