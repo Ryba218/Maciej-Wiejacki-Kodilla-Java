@@ -6,7 +6,7 @@ import java.sql.SQLOutput;
 
 public class Calculator {
 
-        public double adding(double x,double y) {
+        public double add(double x,double y) {
         double addingResult = x + y;
         return addingResult;
         }
@@ -16,7 +16,7 @@ public class Calculator {
         }
     public static void main(String[] args) {
          Calculator calculator = new Calculator();
-         double addResult = calculator.adding(2.6,3.8);
+         double addResult = calculator.add(2.6,3.8);
          System.out.println("Adding result: " + addResult);
 
          double subResult = calculator.substraction(4.5,2.2);
