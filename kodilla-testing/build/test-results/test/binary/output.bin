@@ -1,0 +1,14 @@
+Test Case: begin
+%ArrayList with even numbers size: 0
+Test Case: end
+Test Case: begin
+ArrayList elelment: 3
+Even number - stays
+ArrayList elelment: 2
+Deleting odd number
+ArrayList elelment: 1
+Even number - stays
+ArrayList elelment: 0
+Deleting odd number
+%ArrayList with even numbers size: 2
+Test Case: end
