@@ -37,17 +37,21 @@ public class CalculateStatisticsTestSuite {
     @Test
     public void testZeroPosts(){
         //Given
-        double posts = 0;
+        int posts = 0;
 
         Statistics statisticsMock = mock(Statistics.class);
-        when(statisticsMock.postsCount()).thenReturn((int) posts);
+        when(statisticsMock.postsCount()).thenReturn(posts);
 
         CalculateStatistics calculateStatistics = new CalculateStatistics();
         calculateStatistics.calculateAdvStatistics(statisticsMock);
         //When
-        int postsQuantity = (int) calculateStatistics.getPosts();
+        int postsQuantity = calculateStatistics.getPosts();
+        double postsPerUser = calculateStatistics.getPostsPerUser();
+        double commentsPerPosts = calculateStatistics.getCommentsPerPosts();
         //Then
         Assert.assertEquals(0,postsQuantity);
+        Assert.assertEquals(0,postsPerUser,0.01);
+        Assert.assertEquals(0,commentsPerPosts,0.01);
 
     }
     @Test
@@ -62,41 +66,49 @@ public class CalculateStatisticsTestSuite {
         CalculateStatistics calculateStatistics = new CalculateStatistics();
         calculateStatistics.calculateAdvStatistics(statisticsMock);
         //When
-        int postsQuantity = (int) calculateStatistics.getPosts();
+        int postsQuantity = calculateStatistics.getPosts();
+        double postsPerUser = calculateStatistics.getPostsPerUser();
+        double commentsPerPosts = calculateStatistics.getCommentsPerPosts();
         //Then
         Assert.assertEquals(1000, postsQuantity);
+        Assert.assertEquals(0,postsPerUser,0.01);
+        Assert.assertEquals(0,commentsPerPosts,0.01);
     }
 
     @Test
     public void TestZeroComments() {
         //Given
-        double comments = 0 ;
+        int comments = 0 ;
 
         Statistics statisticsMock = mock(Statistics.class);
-        when(statisticsMock.postsCount()).thenReturn((int)comments);
+        when(statisticsMock.postsCount()).thenReturn(comments);
 
         CalculateStatistics calculateStatistics = new CalculateStatistics();
         calculateStatistics.calculateAdvStatistics(statisticsMock);
         //When
-        int commentsQuantity = (int) calculateStatistics.getComments();
+        int commentsQuantity = calculateStatistics.getComments();
+        double commentsPerUser = calculateStatistics.getCommentsPerUser();
+        double commentsPerPosts = calculateStatistics.getCommentsPerPosts();
         //Then
         Assert.assertEquals(0, commentsQuantity);
+        Assert.assertEquals(0,commentsPerUser,0.01);
+        Assert.assertEquals(0,commentsPerPosts,0.01);
     }
     @Test
     public void testPostsMoreThanComments() {
         //Given
-        double comments = 50;
-        double posts = 100;
+        int comments = 50;
+        int posts = 100;
 
         Statistics statisticsMock = mock(Statistics.class);
-        when(statisticsMock.postsCount()).thenReturn((int)posts);
-        when(statisticsMock.commentsCount()).thenReturn((int)comments);
+        when(statisticsMock.postsCount()).thenReturn(posts);
+        when(statisticsMock.commentsCount()).thenReturn(comments);
 
         CalculateStatistics calculateStatistics = new CalculateStatistics();
         calculateStatistics.calculateAdvStatistics(statisticsMock);
         //When
-        int commentsQuantity = (int) calculateStatistics.getComments();
-        int postsQuantity = (int) calculateStatistics.getPosts();
+        int commentsQuantity = calculateStatistics.getComments();
+        int postsQuantity = calculateStatistics.getPosts();
         double commentsPerPosts = calculateStatistics.getCommentsPerPosts();
         //Then
         Assert.assertTrue(commentsQuantity < postsQuantity);
@@ -106,18 +118,18 @@ public class CalculateStatisticsTestSuite {
     @Test
     public void testCommentsMoreThanPosts() {
         //Given
-        double comments = 200;
-        double posts = 100;
+        int comments = 200;
+        int posts = 100;
 
         Statistics statisticsMock = mock(Statistics.class);
-        when(statisticsMock.postsCount()).thenReturn((int)posts);
-        when(statisticsMock.commentsCount()).thenReturn((int)comments);
+        when(statisticsMock.postsCount()).thenReturn(posts);
+        when(statisticsMock.commentsCount()).thenReturn(comments);
 
         CalculateStatistics calculateStatistics = new CalculateStatistics();
         calculateStatistics.calculateAdvStatistics(statisticsMock);
         //When
-        int commentsQuantity = (int) calculateStatistics.getComments();
-        int postsQuantity = (int) calculateStatistics.getPosts();
+        int commentsQuantity = calculateStatistics.getComments();
+        int postsQuantity = calculateStatistics.getPosts();
         double commentsPerPosts = calculateStatistics.getCommentsPerPosts();
         //Then
         Assert.assertTrue(commentsQuantity > postsQuantity);
@@ -135,7 +147,7 @@ public class CalculateStatisticsTestSuite {
         CalculateStatistics calculateStatistics = new CalculateStatistics();
         calculateStatistics.calculateAdvStatistics(statisticsMock);
         //When
-        int usersQuantity = (int) calculateStatistics.getUsers();
+        int usersQuantity = calculateStatistics.getUsers();
         //Then
         Assert.assertEquals(0,usersQuantity);
     }
@@ -154,7 +166,7 @@ public class CalculateStatisticsTestSuite {
         CalculateStatistics calculateStatistics = new CalculateStatistics();
         calculateStatistics.calculateAdvStatistics(statisticsMock);
         //When
-        int usersQuantity = (int) calculateStatistics.getUsers();
+        int usersQuantity = calculateStatistics.getUsers();
         //Then
         Assert.assertEquals(100,usersQuantity);
     }

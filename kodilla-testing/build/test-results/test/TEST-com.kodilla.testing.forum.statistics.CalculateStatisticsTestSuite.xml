@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-06-08T18:15:07" hostname="DESKTOP-CD8GBG4" time="0.417">
+<testsuite name="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-06-11T11:32:23" hostname="DESKTOP-CD8GBG4" time="0.398">
   <properties/>
-  <testcase name="testCommentsMoreThanPosts" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.407"/>
+  <testcase name="testCommentsMoreThanPosts" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.39"/>
   <testcase name="testOneHundredUsers" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.001"/>
   <testcase name="Test1000Posts" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.001"/>
   <testcase name="testZeroPosts" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.001"/>
-  <testcase name="testZeroUsers" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.002"/>
+  <testcase name="testZeroUsers" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.001"/>
   <testcase name="testPostsMoreThanComments" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.001"/>
   <testcase name="TestZeroComments" classname="com.kodilla.testing.forum.statistics.CalculateStatisticsTestSuite" time="0.001"/>
   <system-out><![CDATA[This is the beginning of tests.
