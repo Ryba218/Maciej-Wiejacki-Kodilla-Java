@@ -40,7 +40,7 @@ public class ForumTestSuite {
         //When
         forumUser.addComment(thePost,"mrsmith", "Thank you for all good words");
         //Then
-        Assert.assertEquals(1,forumUser.getPostQuantity());
+        Assert.assertEquals(1,forumUser.getCommentsQuantity());
     }
     @Test
     public void testGetPost() {
@@ -112,9 +112,13 @@ public class ForumTestSuite {
         boolean result = forumUser.removeComment(theComment);
         //Then
         Assert.assertTrue(result);
-        Assert.assertEquals(0,forumUser.getCommentsQuantity());
+        Assert.assertEquals(0,forumUser.getCommentsQuantity(),0);
+
+
+
 
     }
+
 
 
 

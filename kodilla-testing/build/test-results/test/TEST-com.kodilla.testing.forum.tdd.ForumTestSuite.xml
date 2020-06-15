@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.testing.forum.tdd.ForumTestSuite" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-06-14T18:01:28" hostname="DESKTOP-CD8GBG4" time="0.006">
+  <properties/>
+  <testcase name="testRemovePostNotExisting" classname="com.kodilla.testing.forum.tdd.ForumTestSuite" time="0.001"/>
+  <testcase name="testAddPost" classname="com.kodilla.testing.forum.tdd.ForumTestSuite" time="0.001"/>
+  <testcase name="testGetPost" classname="com.kodilla.testing.forum.tdd.ForumTestSuite" time="0.0"/>
+  <testcase name="testRemoveCommentNotExisting" classname="com.kodilla.testing.forum.tdd.ForumTestSuite" time="0.001"/>
+  <testcase name="testRemovePost" classname="com.kodilla.testing.forum.tdd.ForumTestSuite" time="0.0"/>
+  <testcase name="testGetComment" classname="com.kodilla.testing.forum.tdd.ForumTestSuite" time="0.0"/>
+  <testcase name="testAddComment" classname="com.kodilla.testing.forum.tdd.ForumTestSuite" time="0.001"/>
+  <system-out><![CDATA[This is the begining of tests.
+Preeparing to execute test#1
+Preeparing to execute test#2
+Preeparing to execute test#3
+Preeparing to execute test#4
+Preeparing to execute test#5
+Preeparing to execute test#6
+Preeparing to execute test#7
+All test are finished
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
