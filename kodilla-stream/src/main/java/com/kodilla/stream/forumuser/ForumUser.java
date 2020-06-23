@@ -20,22 +20,27 @@ public class ForumUser {
 
 
     public int getNumber() {
+
         return number;
     }
 
     public String getName() {
+
         return name;
     }
 
     public char getSex() {
+
         return sex;
     }
 
     public LocalDate getBirthDate() {
+
         return birthDate;
     }
 
     public int getPostQuantity() {
+
         return postQuantity;
     }
 
