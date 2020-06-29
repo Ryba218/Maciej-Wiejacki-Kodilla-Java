@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.weather.mock.WeatherForecastTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-14T18:01:28" hostname="DESKTOP-CD8GBG4" time="0.019">
+<testsuite name="com.kodilla.testing.weather.mock.WeatherForecastTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-28T12:35:03" hostname="DESKTOP-CD8GBG4" time="0.019">
   <properties/>
   <testcase name="testCalculateForecastWithMock" classname="com.kodilla.testing.weather.mock.WeatherForecastTestSuite" time="0.019"/>
   <system-out><![CDATA[]]></system-out>
