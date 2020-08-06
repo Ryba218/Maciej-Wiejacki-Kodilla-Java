@@ -12,10 +12,12 @@ public class OrderProcessor {
     }
 
     public void getStoreList() {
+
         this.storeList = store.getSuppliersList();
     }
 
     public void showOrders() {
+
         storeList.forEach(ProductSupplier::process);
     }
 }
