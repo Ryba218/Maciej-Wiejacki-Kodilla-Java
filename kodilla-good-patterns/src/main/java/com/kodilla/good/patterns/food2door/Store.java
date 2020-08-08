@@ -6,10 +6,12 @@ public class Store {
     private HashSet<ProductSupplier> suppliersList;
 
     public Store(HashSet<ProductSupplier> suppliersList) {
+
         this.suppliersList = suppliersList;
     }
 
     public HashSet<ProductSupplier> getSuppliersList() {
+
         return new HashSet<>(suppliersList);
     }
 }
