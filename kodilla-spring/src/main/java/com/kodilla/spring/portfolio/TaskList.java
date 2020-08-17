@@ -18,6 +18,7 @@ public class TaskList {
     }
 
     public boolean addTask(String task) {
+
         return tasks.add(task);
     }
 }
