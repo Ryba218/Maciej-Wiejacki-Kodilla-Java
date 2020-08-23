@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns.LoggerTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-19T16:41:36" hostname="DESKTOP-CD8GBG4" time="0.001">
-  <properties/>
-  <testcase name="testGetLastLog" classname="com.kodilla.patterns.LoggerTestSuite" time="0.001"/>
-  <system-out><![CDATA[Log: [John]
-Logged: John
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

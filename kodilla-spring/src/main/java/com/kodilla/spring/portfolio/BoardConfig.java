@@ -16,6 +16,7 @@ public class BoardConfig {
     @Bean(name = "toDoList")
     @Scope(value = "prototype")
     public TaskList prodDoneList() {
+
         return new TaskList();
     }
 
@@ -26,6 +27,7 @@ public class BoardConfig {
     @Bean(name = "inProgressList")
     @Scope(value = "prototype")
     public TaskList produceInProgressList() {
+
         return new TaskList();
     }
 
@@ -36,6 +38,7 @@ public class BoardConfig {
     @Bean(name = "doneList")
     @Scope(value = "prototype")
     public TaskList produceDoneList() {
+
         return new TaskList();
     }
 
