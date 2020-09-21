@@ -44,6 +44,7 @@ public class BoardConfig {
 
     @Bean
     public Board addLists() {
-        return new Board(toDoList,inProgressList,doneList);
+        return
+                new Board(toDoList,inProgressList,doneList);
     }
 }

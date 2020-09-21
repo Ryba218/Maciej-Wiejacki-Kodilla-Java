@@ -8,6 +8,7 @@ public class OrderProcessor {
     private HashSet<ProductSupplier> storeList = new HashSet<>();
 
     OrderProcessor(Store store) {
+
         this.store = store;
     }
 

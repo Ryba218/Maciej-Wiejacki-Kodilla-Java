@@ -5,18 +5,22 @@ public class User {
     protected SocialPublisher socialPublisher;
 
     public User(String name) {
+
         this.name = name;
     }
 
     public String getName() {
+
         return name;
     }
 
     public String sharePost() {
-       return socialPublisher.share();
+
+        return socialPublisher.share();
     }
 
     public void setSocialStrategy(SocialPublisher socialPublisher) {
+
         this.socialPublisher = socialPublisher;
     }
 }
