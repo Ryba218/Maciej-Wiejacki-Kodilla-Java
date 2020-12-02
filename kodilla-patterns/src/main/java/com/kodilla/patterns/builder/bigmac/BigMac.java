@@ -18,18 +18,22 @@ public class BigMac {
     }
 
     public String getRoll() {
+
         return roll;
     }
 
     public int getBurgers() {
+
         return burgers;
     }
 
     public String getSauce() {
+
         return sauce;
     }
 
     public List<String> getIngredients() {
+
         return ingredients;
     }
 

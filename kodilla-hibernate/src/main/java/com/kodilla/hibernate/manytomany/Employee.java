@@ -5,11 +5,17 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-@NamedQuery(
-        name = "Employee.retrieveByLastName",
-        query = "FROM Employee WHERE lastname =:LASTNAME"
-)
+@NamedQueries({
+        @NamedQuery(
+                name = "Employee.retrieveByLastName",
+                query = "FROM Employee WHERE lastname =:LASTNAME"
+        ),
+        @NamedQuery(
+                name = "Employee.retrieveByAnyLettersOfEmployeeName",
+                query = "FROM Employee WHERE firstname LIKE CONCAT('%', :ANYLETTERS, '%') OR lastname LIKE CONCAT('%', :ANYLETTERS, '%')"
 
+        )
+})
 @Entity
 @Table(name = "EMPLOYEES")
 public class Employee {
@@ -44,7 +50,7 @@ public class Employee {
 
     @NotNull
     @Column(name = "LASTNAME")
-    private String getLastname() {
+    public String getLastname() {
 
         return lastname;
     }
