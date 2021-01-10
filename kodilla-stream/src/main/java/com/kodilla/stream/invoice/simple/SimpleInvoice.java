@@ -8,10 +8,12 @@ public class SimpleInvoice {
     private final List<SimpleItem> items = new ArrayList<>();
 
     public void addItem(SimpleItem item) {
+
         items.add(item);
     }
 
     public boolean removeItem(SimpleItem item) {
+
         return items.remove(item);
     }
 

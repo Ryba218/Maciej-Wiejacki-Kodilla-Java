@@ -4,9 +4,9 @@ public final class SimpleProduct {
     private final String productName;
     private final double productPrice;
 
-    public SimpleProduct(String productName, double prductPrice) {
+    public SimpleProduct(String productName, double productPrice) {
         this.productName = productName;
-        this.productPrice = prductPrice;
+        this.productPrice = productPrice;
     }
 
     public String getProductName() {
